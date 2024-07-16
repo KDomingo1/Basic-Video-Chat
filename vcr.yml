@@ -1,0 +1,16 @@
+project:
+  name: Basic-Video-Chat
+instance:
+  name: dev
+  runtime: nodejs16
+  region: aws.euw1
+  application-id: 2823dd3a-64b1-48ff-8aae-4a088a721d9d
+  entrypoint: [node, server.js]
+  environment:
+    - name: VIDEO_API_KEY
+      value: "2f84acc4"
+    - name: VIDEO_API_SECRET
+      value: "SWpUuN70ra2yKou8"
+debug:
+  name: debug
+  entrypoint: [sh, debug.sh]
